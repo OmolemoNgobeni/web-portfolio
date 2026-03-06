@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Omolemo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Port<span>folio</span></div>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      <ul id="nav-links" class="nav-links">
+       <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="skills.html">SKILLS</a></li>
+        <li><a href="contact.html">CONTACT ME</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="contact-section">
+    <h2>Contact Me</h2>
+    <p>I'd love to hear from you! Whether it's for a project, a question, or just to connect.</p>
+
+    <form class="contact-form" action="mailto:omolemo@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <div class="contact-icons">
+      <a href="https://linkedin.com/in/omolemo-ramodike" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://instagram.com/omolemo-ngobeni" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/omolemo-ngobeni" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

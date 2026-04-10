@@ -1107,3 +1107,35 @@ footer {
   background-color: #00f5c3;
   color: black;
 }
+
+.certifications h2 {
+  color: #00f5c3;
+}
+
+/* SKILL GROUP TITLE */
+.skill-group h3 {
+  color: #00f5c3;
+  margin-bottom: 20px;
+}
+
+/* SKILL CARD */
+.icon-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.icon-skill:hover {
+  transform: translateY(-5px);
+  border: 1px solid #00f5c3;
+}
+
+/* TEXT */
+.icon-skill p {
+  margin-top: 8px;
+  font-size: 14px;
+}

@@ -915,3 +915,195 @@ footer {
   color: #00f5c3;
 }
 
+.skills-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.skill-group {
+  margin-bottom: 50px;
+}
+
+.skill-group h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.icon-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.icon-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.icon-skill i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.skill-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* IMAGE */
+.project-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.project-content {
+  text-align: left;
+  flex: 1; /* let content take remaining space */
+}
+
+/* DESCRIPTION */
+.project-content .description {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+/* LIST */
+.project-content ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+
+.project-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  gap: 10px;            
+}
+
+
+
+
+
+
+/* PROJECT TILE LAYOUT */
+.project-tile {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+.btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #00f5c3;
+  color: #00f5c3;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #00f5c3;
+  color: black;
+}
+
+
+
+
+
+/* CERTIFICATIONS SECTION */
+.certifications {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.certifications h2 {
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.cert-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.cert-card {
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+  border: 1px solid rgba(0, 245, 195, 0.2);
+  transition: 0.3s;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  border-color: #00f5c3;
+}
+
+/* TITLE */
+.cert-card h3 {
+  margin-bottom: 5px;
+}
+
+/* ORG BADGE (MATCH GREEN THEME) */
+.cert-org {
+  display: inline-block;
+  font-size: 12px;
+  border: 1px solid #00f5c3;
+  color: #00f5c3;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.cert-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #ccc; /* works nicely if your background is dark */
+}
+
+/* BUTTON (REUSING YOUR STYLE) */
+.cert-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #00f5c3;
+  color: #00f5c3;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.cert-btn:hover {
+  background-color: #00f5c3;
+  color: black;
+}

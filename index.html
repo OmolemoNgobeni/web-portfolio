@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Omolemo | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Devicon (for programming/tech icons) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
   <script src="script.js" defer></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <nav class="navbar">
@@ -17,197 +29,332 @@
       <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
       <ul id="nav-links" class="nav-links">
         <li><a href="#home">HOME</a></li>
-        <li><a href="about.html">ABOUT ME</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-        <li><a href="skills.html">SKILLS</a></li>
-        <li><a href="contact.html">CONTACT ME</a></li>
+        <li><a href="#about">ABOUT ME</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT ME</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- HERO SECTION -->
   <section class="hero" id="home">
     <div class="hero-text">
       <h3>Hello, my name is</h3>
-      <h1><span>Omolemo</span> Ramodike</h1>
-      <p>I'm a Website developer and a QA Tester. </p>
-     
-
+      <h1><span>Omolemo</span> Ramodike </h1>
+      <p>Business Analyst | Aspiring Data Analyst | QA tester</p>
+      <p>I analyze business needs, gather requirements, improve systems and support data-driven decision making.</p>
       <div class="social-icons">
-  <a href="https://linkedin.com/in/omolemo-ramodike" target="_blank" title="LinkedIn">
-    <i class="fab fa-linkedin-in"></i>
-  </a>
-  <a href="https://instagram.com/omolemo-ngobeni" target="_blank" title="Instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
-   <a href="https://facebook.com/omolemo-ngobeni" target="_blank" title="Instagram">
-    <i class="fab fa-facebook"></i>
-  </a>
-  <a href="https://github.com/omolemo-ngobeni" target="_blank" title="GitHub">
-    <i class="fab fa-github"></i>
-  </a>
-</div>
-
-
-      <a href="Ms Omolemo Ramodike's resume (3).pdf" class="btn">DOWNLOAD CV</a>
+        <a href="https://linkedin.com/in/omolemo-ramodike" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://instagram.com/omolemo-ngobeni" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/omolemo-ngobeni" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/omolemo-ngobeni" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <a href="Omolemo Ramodike_CV (1).pdf" class="btn">DOWNLOAD CV</a>
     </div>
-    <div class="hero-image">
-      <img src="images/profimg.jpg" alt="Omolemo">
-    </div>
+   
   </section>
-</body>
+
+  <!-- ABOUT SECTION -->
 <section class="about-section" id="about">
-  <div class="about-header">
-    <h1>About Me</h1>
-  </div>
-  
-  <div class="about-tiles">
-    <div class="tile">
-      <h2>About</h2>
-      <p>I’m a passionate and detail-oriented Web Developer and QA Tester with a love for clean design and efficient systems. I enjoy solving problems through code and ensuring software works as intended. Always eager to learn, grow, and add value to forward-thinking tech teams.</p>
-    </div>
-    
-    <div class="tile">
-      <h2>Experience</h2>
-        <p>Proven experience in both website development and QA testing, with a strong focus on delivering high-quality, user-friendly digital products. Skilled in manual testing, bug reporting, and building responsive websites using HTML, CSS, and JavaScript.</p>    </div>
-    
-    <div class="tile">
-      <h2>Education</h2>
-      <p>Completed a BSc in Information Systems at Rhodes University. Currently enrolled in a Project Management Short Learning Programme at UNISA. Also expanding my tech skills through ALX Data Analytics. </p>
+  <div class="about-photo-text">
+    <img src="images\gradpic.jpg" alt="Omolemo Graduation" class="about-photo" />
+    <div class="about-text">
+      <h1>About Me</h1>
+      <p>I am a recent BSc graduate, majoring in Information Systems and Human Kinetics and ergonomics. I gained one year of hands-on experience through my internship at <strong>Manut Services Pty Ltd</strong> as a Business Analyst intern, where I contributed to developing mobile applications, compiled and organized project documentation, and supported teams in gathering and analyzing business requirements.</p>
+      <p>Passionate about data and business analysis, I am currently expanding my skills through the <strong>ALX Africa Data Analytics Programme</strong> and a <strong>MICT SETA Business Analysis Learnership with Mindworx</strong>. I enjoy turning complex problems into practical solutions and collaborating with teams to improve processes and outcomes.</p>
+      <p>Resilient, detail-oriented, and committed to continuous learning, my goal is to bridge the gap between business needs and technology, making meaningful contributions while growing into a well-rounded professional in the tech and analytics field.</p>
     </div>
   </div>
 </section>
 
-<section class="home-projects" id="projects">
-  <h2>Featured Projects</h2>
-  <div class="projects-grid">
-    <a href="projects.html#family-tree" class="project-tile">
-      <div class="project-icon">🌳</div>
-      <h3>Family Tree App</h3>
-      <p>An interactive mobile app built with Ionic and Angular that allows users to visualize and manage their family history with ease.</p>
-    </a>
-    <a href="projects.html#optiflow" class="project-tile">
-      <div class="project-icon">⚙️</div>
-      <h3>OptiFlow App</h3>
-      <p>A streamlined application designed for driving schools to efficiently manage student progress, schedule lessons, and track performance. Built with Figma for design, and developed using Ionic and Angular to deliver a responsive, user-friendly experience.</p>
-    </a>
-    <a href="projects.html#residence-maintenance" class="project-tile">
-      <div class="project-icon">🏠</div>
-      <h3>Res Maintenance website</h3>
-      <p>A web-based platform developed as a final year project to simplify maintenance request management for residential communities. Designed with Figma and built using PHP, MySQL, HTML, CSS, and JavaScript, it enhances communication between residents and management by efficiently tracking and updating maintenance tasks.</p>
-    </a>
-  </div>
-  <div class="view-all-projects">
-    <a href="projects.html" class="btn">View All Projects</a>
-  </div>
-</section><section id="skills" class="icon-skills-section">
+
+
+
+ <!-- SKILLS SECTION -->
+  <section class="skills-section" id="skills">
   <h2>My Skills</h2>
 
-  <div class="icon-skills-container">
+  <!-- DATA ANALYTICS -->
+  <div class="skill-group">
+    <h3>📊 Data Analytics</h3>
+    <div class="icon-skill-grid">
 
-
-    <div class="skill-category">
-
-      <div class="icon-skill-grid">
-        <div class="icon-skill">
-          <i class="fas fa-code"></i>
-          <span>HTML</span>
-        </div>
-        <div class="icon-skill">
-          <i class="fab fa-css3-alt"></i>
-          <span>CSS</span>
-        </div>
-       <div class="icon-skill">
-        <i class="fab fa-figma"></i>
-        <span>Figma</span>
-        </div>
-        <div class="icon-skill">
-      <i class="fab fa-js"></i>
-      <span>JavaScript</span>
-    </div>
-
-        <div class="icon-skill">
-          <i class="fas fa-database"></i>
-          <span>MySQL</span>
-        </div>
-       
-        <div class="icon-skill">
-          <i class="fas fa-bug"></i>
-          <span>Manual Testing</span>
-        </div>
-        <div class="icon-skill">
-          <i class="fas fa-chart-bar"></i>
-          <span>Tableau</span>
-        </div>
-        <div class="icon-skill">
-          <i class="fas fa-file-alt"></i>
-          <span>SRS Docs</span>
-        </div>
+      <!-- Python -->
+      <div class="icon-skill">
+        <i class="devicon-python-plain colored"></i>
+        <span>Python</span>
       </div>
-    </div>
 
-   
-<div class="skill-category">
- 
-  <div class="icon-skill-grid">
-    <div class="icon-skill">
-      <i class="fas fa-comments"></i>
-      <span>Communication</span>
-    </div>
-    <div class="icon-skill">
-      <i class="fas fa-lightbulb"></i>
-      <span>Problem Solving</span>
-    </div>
-    <div class="icon-skill">
-      <i class="fas fa-users"></i>
-      <span>Teamwork</span>
-    </div>
-    <div class="icon-skill">
-      <i class="fas fa-tasks"></i>
-      <span>Multitasking</span>
-    </div>
-    <div class="icon-skill">
-      <i class="fas fa-clock"></i>
-      <span>Time Management</span>
-    </div>
-    <div class="icon-skill">
-      <i class="fas fa-sync-alt"></i>
-      <span>Adaptability</span>
-    </div>
-    <div class="icon-skill">
-      <i class="fas fa-paint-brush"></i>
-      <span>Creativity</span>
-    </div>
-    <div class="icon-skill">
-      <i class="fas fa-briefcase"></i>
-      <span>Work Ethic</span>
+      <!-- SQL -->
+      <div class="icon-skill">
+        <i class="devicon-mysql-plain colored"></i>
+        <span>SQL</span>
+      </div>
+
+      <!-- Excel -->
+      <div class="icon-skill">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg" class="skill-img" alt="Excel">
+        <span>Excel</span>
+      </div>
+
+      <!-- Tableau -->
+      <div class="icon-skill">
+        <img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" class="skill-img" alt="Tableau">
+        <span>Tableau</span>
+      </div>
+
+      <!-- Data Visualization -->
+      <div class="icon-skill">
+        <i class="fas fa-chart-line"></i>
+        <span>Data Visualization</span>
+      </div>
+
+
+      <!-- Exploratory Data Analysis -->
+      <div class="icon-skill">
+        <i class="fas fa-search"></i>
+        <span>EDA</span>
+      </div>
+
     </div>
   </div>
-</div>
-<section class="contact-section">
-  <div class="contact-wrapper">
-    <h2>Contact Me</h2>
-    <p>I'd love to hear from you! Whether it's for a project, a question, or just to connect.</p>
 
-    <form class="contact-form" action="mailto:omolemo@example.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+  <!-- BUSINESS ANALYSIS -->
+  <div class="skill-group">
+    <h3>📋 Business Analysis</h3>
+    <div class="icon-skill-grid">
 
-    <div class="contact-icons">
-      <a href="https://linkedin.com/in/omolemo-ramodike" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://instagram.com/omolemo-ngobeni" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://github.com/omolemo-ngobeni" target="_blank"><i class="fab fa-github"></i></a>
+      <div class="icon-skill">
+        <i class="fas fa-tasks"></i>
+        <span>Requirements Gathering</span>
+      </div>
+
+      <div class="icon-skill">
+        <i class="fas fa-file-alt"></i>
+        <span>SRS Documentation</span>
+      </div>
+
+      <div class="icon-skill">
+        <i class="fas fa-project-diagram"></i>
+        <span>Process Analysis</span>
+      </div>
+
+      <div class="icon-skill">
+        <i class="fas fa-users"></i>
+        <span>Stakeholder Communication</span>
+      </div>
+
     </div>
+  </div>
+
+  <!-- QUALITY ASSURANCE -->
+  <div class="skill-group">
+    <h3>🧪 Quality Assurance</h3>
+    <div class="icon-skill-grid">
+
+      <div class="icon-skill">
+        <i class="fas fa-bug"></i>
+        <span>Manual Testing</span>
+      </div>
+
+      <div class="icon-skill">
+        <i class="fas fa-check-circle"></i>
+        <span>Test Cases</span>
+      </div>
+
+      <div class="icon-skill">
+        <i class="fas fa-exclamation-triangle"></i>
+        <span>Bug Tracking</span>
+      </div>
+
+      <div class="icon-skill">
+        <i class="fas fa-cogs"></i>
+        <span>System Testing</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="skill-group">
+    <h3>💻 Technical Skills</h3>
+    <div class="icon-skill-grid">
+
+      <div class="icon-skill">
+        <i class="devicon-html5-plain colored"></i>
+        <span>HTML</span>
+      </div>
+
+      <div class="icon-skill">
+        <i class="devicon-css3-plain colored"></i>
+        <span>CSS</span>
+      </div>
+
+      <div class="icon-skill">
+        <i class="devicon-javascript-plain colored"></i>
+        <span>JavaScript</span>
+      </div>
+
+      <div class="icon-skill">
+        <i class="devicon-github-original colored"></i>
+        <span>GitHub</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SOFT SKILLS -->
+  <div class="skill-group">
+    <h3>🤝 Soft Skills</h3>
+    <div class="icon-skill-grid">
+
+      <div class="icon-skill">
+        <i class="fas fa-comments"></i>
+        <span>Communication</span>
+      </div>
+
+      <div class="icon-skill">
+        <i class="fas fa-lightbulb"></i>
+        <span>Problem Solving</span>
+      </div>
+
+      <div class="icon-skill">
+        <i class="fas fa-users"></i>
+        <span>Teamwork</span>
+      </div>
+
+      <div class="icon-skill">
+        <i class="fas fa-clock"></i>
+        <span>Time Management</span>
+      </div>
+
+      <div class="icon-skill">
+        <i class="fas fa-sync-alt"></i>
+        <span>Adaptability</span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+</section>
+
+
+<section class="certifications" id="certifications">
+  <h2>Certifications & Professional Development</h2>
+
+  <div class="cert-container">
+
+    <div class="cert-card">
+      <h3>Excel Certificate</h3>
+      <span class="cert-org">Ikanva</span>
+      <p>Focused on Excel, visualization, and real-world problem solving.</p>
+      <a href="microsoft excel specialist.pdf" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+    <div class="cert-card">
+      <h3>AI Program</h3>
+      <span class="cert-org">WeThinkCode</span>
+      <p>Introduction to artificial intelligence concepts and practical applications.</p>
+      <a href="Omolemo Ramodike (1).pdf" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+    <div class="cert-card">
+      <h3>Professional Foundations</h3>
+      <span class="cert-org">ALX</span>
+      <p>Developed communication, leadership, and workplace readiness skills.</p>
+      <a href="89-professional-foundations-certificate-omolemo-ramodike (2).png" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+    <div class="cert-card">
+      <h3>Work Readiness Programme</h3>
+      <span class="cert-org">Mindworx</span>
+      <p>Training in business analysis, project documentation, and QA fundamentals.</p>
+      <a href="Project Management Certificate.pdf" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+
+
   </div>
 </section>
-<footer class="site-footer">
-  <p>&copy; 2025 Omolemo Ramodike. All rights reserved.</p>
-  
-</footer>
-
-  
 
 
+
+ <section class="home-projects" id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-tile">
+
+      <!-- LEFT: IMAGE -->
+      <div class="project-image">
+        <img src="images/Screenshot 2026-04-01 161837.png" alt="Residence Maintenance System">
+      
+      <a href="https://drive.google.com/drive/folders/1ThoA3pIIHGRJr3cjRtV5BZLY7Wf2r3O5?usp=sharing"
+   target="_blank"
+   class="btn">
+  View Project
+</a>
+        </div>
+      <!-- RIGHT: CONTENT -->
+      <div class="project-content">
+
+        <h3>Residence Maintenance System</h3>
+
+        <p class="description">
+          A digital system designed to manage and track maintenance requests within student residences,
+          improving communication between residents and management.
+        </p>
+
+        <h4>My Role: Business Analyst</h4> <br>
+        
+
+        <h4>Key Responsibilities:</h4>
+        <ul>
+          <li>Gathered and documented business requirements</li>
+          <li>Created process flows, use cases, and functional specifications to guide development.</li>
+          <li>Maintained up-to-date documentation for projects, including user stories, BRDs, and reports.</li>
+          <li>Ensured alignment between business objectives and technical solutions.</li>
+          <li>Collaborated closely with developers, QA, and project managers to ensure smooth project delivery.</li>
+          <li>Facilitated meetings and workshops with stakeholders to clarify business needs.</li>
+        </ul>
+
+        <h4>Tools & Skills:</h4>
+        <li>Business Analysis, Documentation, Communication, Figma, Tablaue, Excel</li>
+
+      
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="contact-wrapper">
+      <h2>Contact Me</h2>
+      <p>I'd love to hear from you! Whether it's for a project, a question, or just to connect.</p>
+      <form class="contact-form" action="mailto:omolemo@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="contact-icons">
+        <a href="https://linkedin.com/in/omolemo-ramodike" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/omolemo-ngobeni" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/omolemo-ngobeni" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Omolemo Ramodike. All rights reserved.</p>
+  </footer>
+</body>
 </html>
